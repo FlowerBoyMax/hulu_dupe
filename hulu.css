@@ -1,0 +1,134 @@
+body {
+  background: linear-gradient(115deg, #051320 60%, #072725 100%) fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.logo { /*green hulu logo*/
+  background-color: transparent;
+  border: none;
+  color: #3dbb3d;
+  padding: none;
+  text-family: arial black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 950;
+  position: absolute;
+  right: 20px;
+}
+.icons { /*icon container*/
+  display: inline-flex;
+  min-width: 550px;
+}
+.icon { /*individual icons*/
+  height: 40px;
+  width: 40px;
+  margin: 12px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.home { /*for glow effect around label*/
+  padding: 0px 4px 23px 4px;
+  display: flex;
+}
+.homeContainer { /*contains home logo and button*/
+  height: 60px;
+  width:49px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  z-index: -2
+}
+.homeAligner { /*aligns home button under home icon*/
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+  width: 3px;
+}
+.homeContent { /*home button*/
+  background-color: transparent;
+  font-family: helvetica;
+  border: none;
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.homeContent:hover {
+  text-shadow: 2px 2px 12px white;
+  cursor: pointer;
+}
+.icon:hover {
+  box-shadow: 0px 0px 10px white;
+  cursor: pointer;
+}
+.scrollHeads {
+  color: white;
+  font-family: helvetica;
+  font-size: 20px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+p { /*labels*/
+  margin: 30px;
+  transition: ease-in-out all .2s;
+  letter-spacing: 2px;
+}
+.last { /*padding for all right hand elements*/
+  padding-right: 40px;
+}
+.rowFour {
+  padding-bottom: 60px;
+}
+p:hover { /*label glow effect*/
+  text-shadow: 0px 0px 20px white;
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.labelFade { /*label end fade effect*/
+  background: linear-gradient(90deg, rgba(255,255,255,0) 20%, #051420 90%);
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 103px;
+  right: 0px;
+  z-index: 20;
+}
+.rowOne {
+  display: flex;
+  overflow-x: scroll;
+}
+.rowTwo {
+  display: flex;
+  overflow-x: auto;
+}
+.rowThree {
+  display: flex;
+  overflow-x: auto;
+}
+.rowFour {
+  display: flex;
+  overflow-x: auto;
+}
+.poster { /*all show photos*/
+  width: 270px;
+  height: 150px;
+  margin: 20px;
+  transition: transform .2s;
+  //z-index: 5;
+}
+.poster:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.shadow { /*bottom fade effect*/
+  background: linear-gradient(180deg, rgba(255,255,255,0) 10%, rgba(0,0,0,1) 90%);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 90px;;
+  width: 100%;
+}
